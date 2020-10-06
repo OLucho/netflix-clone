@@ -44,6 +44,8 @@ export const Item = styled.div`
   color: white;
   margin-bottom: 10px;
   max-width: 680px;
+  margin: auto;
+  width: 100%;
 `;
 
 export const Frame = styled.div`

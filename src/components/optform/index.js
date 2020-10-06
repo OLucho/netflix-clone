@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Button, Text, Input, Break } from './styles/optform';
 
 export default function OptForm({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -8,7 +9,7 @@ OptForm.Input = function OptFormInput({ ...restProps }) {
   return <Input {...restProps}></Input>;
 };
 
-OptForm.Button = function OptFormButton({ ...restProps }) {
+OptForm.Button = function OptFormButton({ children, ...restProps }) {
   return (
     <Button {...restProps}>
       {children} <img src="/images/icons/chevron-right.png" alt="Try now" />
@@ -22,4 +23,8 @@ OptForm.Input = function OptFormInput({ ...restProps }) {
 
 OptForm.Text = function OptFormText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
+};
+
+OptForm.Break = function OptFormBreak({ children, ...restProps }) {
+  return <Break {...restProps}>{children}</Break>;
 };
