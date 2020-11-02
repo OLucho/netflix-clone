@@ -43,7 +43,7 @@ export const Title = styled.h1`
 export const Item = styled.div`
   color: white;
   margin-bottom: 10px;
-  max-width: 680px;
+  max-width: 710px;
   margin: auto;
   width: 100%;
 `;
